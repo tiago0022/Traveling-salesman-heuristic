@@ -2,8 +2,6 @@ package travelingSalesman;
 
 import java.util.Arrays;
 
-import graphRepresentation.*;
-
 public class SalesmanPath extends CitiesMap {
 
 	private int bestPath[];
@@ -25,8 +23,8 @@ public class SalesmanPath extends CitiesMap {
 
 	@Override
 	public String toString() {
-		return "SalesmanPath [totalDistance=" + totalDistance + "\nbestPath=" + Arrays.toString(bestPath)
-				+ "]";
+		return "SalesmanPath [\n\tname = " + this.getName() + ", totalDistance = " + totalDistance + ",\n\tbestPath = " + Arrays.toString(bestPath)
+				+ "\n]";
 	}
 
 	// Method to find the best path
